@@ -5,7 +5,8 @@ import sys
 
 def get_file_argument():
     if len(sys.argv) <= 1:
-        sys.exit(1)
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)    
     return sys.argv[1]
 
 def get_book_text(file_path):
